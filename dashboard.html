@@ -184,7 +184,38 @@ iframe {
 </div>
 
 <!-- Duplicate ABOVE block for tab 2, 3, 4 (only change later links if needed) -->
+<!-- ================= TAB 1–4 : INSTITUTES ================= -->
+<!-- SAME STRUCTURE REUSED -->
 
+<div class="tab-content">
+  <div class="dashboard-inner">
+
+    <div class="dashboard-menu">
+      <div class="menu-item active" onclick="showInner(1,0)">Leaderboard</div>
+      <div class="menu-item" onclick="showInner(1,1)">CS Progress</div>
+      <div class="menu-item" onclick="showInner(1,2)">Ticket Holders</div>
+    </div>
+
+    <div class="dashboard-view">
+  <!-- Leaderboard -->
+  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRa4XnGfE0230-OQT9XaruoNT6yjv6yiQ7VV7GIGk41jV8urz94zjWJ55nWBr5wyBOepP2K0kUaG3RY/pubhtml?gid=83067525&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+
+  <!-- CS Progress -->
+  <iframe class="dash-frame"
+    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTp82wM5lv5-mX10J78TKzWSg8hS2WO1mUy-sxst0DCdcIQYeMihZd-MuZZ6X1tEg9EgwfQq4k-KUor/pubhtml?gid=0&single=true&widget=true&headers=false">
+  </iframe>
+
+  <!-- Tickets -->
+  <div class="dash-frame placeholder">
+    Ticket holders dashboard will be added here.
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+<!-- Duplicate ABOVE block for tab 2, 3, 4 (only change later links if needed) -->
 <script>
 function showTab(tabIndex) {
   document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
